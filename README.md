@@ -23,6 +23,21 @@ C/C++写的一个百度网盘工具，可以在linux终端中使用。
 ### 4. 安装
     cd ..
     sudo apt install ./baidupcs_*.deb
+    
+    
+编译 (fedora) ：
+===================================    
+### 1. 安装编译依赖
+sudo dnf update && sudo dnf install openssl automake libcurl-devel
+### 2. 获取源代码
+git clone https://github.com/GangZhuo/BaiduPCS.git
+### 3. 编译源代码
+    cd BaiduPCS
+    ./configure && make
+    make install #将安装到/usr/local/bin下
+### 4. 手动安装到其他目录，例如 /usr/bin 下 
+    cp ./baidupcs /usr/bin/
+
 
 编译 (Debian) (新方法)：
 ===================================
